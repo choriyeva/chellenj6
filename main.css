@@ -90,7 +90,7 @@ body > .container > .output > h1 > span {
   font-style: italic;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   body {
     display: flex;
     justify-content: center;
