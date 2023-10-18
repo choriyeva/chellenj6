@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Pop !important;
 }
 
 :root {
@@ -15,10 +14,6 @@
   --Light-red: hsl(0, 100%, 67%)- ;
 }
 
-@font-face {
-  font-family: Pop;
-  src: url(./assets/fonts/Poppins-Regular.ttf);
-}
 body {
   display: flex;
   justify-content: center;
@@ -28,7 +23,7 @@ body {
 }
 body > .container {
   background-color: var(--White);
-  width: 420px;
+  width: 450px;
   max-width: 80%;
   padding: 30px;
   position: relative;
@@ -42,11 +37,18 @@ body > .container > .input-flex {
 body > .container > .input-flex > .input-container {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-bottom: 20px;
+  font-family: Poppins;
+}
+body > .container > .input-flex > .input-container > span {
+  font-weight: bolder;
+  color: var(--Smokey-grey);
+  font-size: 13px;
+  margin-left: 2px;
 }
 body > .container > .input-flex > .input-container > input {
-  width: 70px;
+  width: 75px;
   padding: 10px;
   border-radius: 5px;
   border: 2px solid var(--Off-white);
@@ -73,14 +75,95 @@ body > .container > .submit-btn {
   border-radius: 50%;
   position: absolute;
   right: 30px;
-  top: 90px;
+  top: 70px;
 }
 body > .container > .submit-btn:hover {
   background-color: black;
 }
-body > .container > .output > h1 > span {
+body > .container > .output > h1 {
+  font-family: Poppins;
+  font-weight: 800;
   font-size: 2.7rem;
+}
+body > .container > .output > h1 > span {
   color: var(--Purple);
   font-style: italic;
-  font-weight: bolder;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off-white);
+    min-height: 100vh;
+  }
+  body > .container {
+    background-color: var(--White);
+    width: 450px;
+    max-width: 80%;
+    padding: 30px 20px;
+    position: relative;
+    border-radius: 20px 20px 150px 20px;
+  }
+  body > .container > .input-flex {
+    display: flex;
+    border-bottom: 2px solid var(--Off-white);
+    margin-bottom: 50px;
+  }
+  body > .container > .input-flex > .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-family: Poppins;
+  }
+  body > .container > .input-flex > .input-container > span {
+    font-weight: bolder;
+    color: var(--Smokey-grey);
+    font-size: 13px;
+    margin-left: 2px;
+  }
+  body > .container > .input-flex > .input-container > input {
+    width: 75px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--Off-white);
+    outline: none;
+  }
+  body > .container > .input-flex > .input-container.input:focus {
+    border: 2px solid var(--Purple);
+  }
+  body > .container > .input-flex > .input-container small {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  body > .container > .submit-btn {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    background: var(--Purple);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 115px;
+    top: 110px;
+  }
+  body > .container > .submit-btn:hover {
+    background-color: black;
+  }
+  body > .container > .output > h1 {
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 2.7rem;
+  }
+  body > .container > .output > h1 > span {
+    color: var(--Purple);
+    font-style: italic;
+  }
 }/*# sourceMappingURL=main.css.map */
