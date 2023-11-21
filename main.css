@@ -90,7 +90,7 @@ body > .container > .output > h1 > span {
   font-style: italic;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   body {
     display: flex;
     justify-content: center;
@@ -151,7 +151,7 @@ body > .container > .output > h1 > span {
     border: none;
     border-radius: 50%;
     position: absolute;
-    right: 115px;
+    right: 125px;
     top: 110px;
   }
   body > .container > .submit-btn:hover {
